@@ -1,0 +1,28 @@
+{
+    "name": "book-management",
+    "version": "1.0.0",
+    "description": "CRUD for Books Management",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "test": "mocha --timeout 10000"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shyam2529/book-management.git"
+    },
+    "keywords": [
+        "Book",
+        "CRUD"
+    ],
+    "author": "Yogesh Kumar Panchal",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shyam2529/book-management/issues"
+    },
+    "homepage": "https://github.com/shyam2529/book-management#readme",
+    "dependencies": {
+        "express": "^4.18.2",
+        "mongoose": "^8.0.0"
+    }
+}
