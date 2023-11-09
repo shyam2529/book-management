@@ -21,7 +21,7 @@ App will be started on port 3000 and can be access apis via postman or similar a
 endpoint: http://localhost:3000/api/save
 type: POST
 Headers: <Content-Type: application/json>
-example data: 
+input data: 
 {
 	"title": "Problem Solving Through Node JS", 
 	"author": "Yogesh Panchal",
@@ -38,10 +38,6 @@ result:
 endpoint: http://localhost:3000/api/findall
 type: POST
 Headers: <Content-Type: application/json>
-example data: 
-{
-	"id": "654bd135505adc19a404aa6f"
-}
 
 result:
 [
@@ -66,11 +62,13 @@ result:
 # 3. View details of a specific book by its ID
 
 
-endpoint: http://localhost:3000/api/findall
+endpoint: http://localhost:3000/api/find
 type: GET
 Headers: <Content-Type: application/json>
-example data: none
-
+input data:
+{
+	"id": "654bcfa1505adc19a404aa63"
+}
 result:
   {
     "__v" : 0,
@@ -89,7 +87,7 @@ result:
 endpoint: http://localhost:3000/api/update
 type: POST
 Headers: <Content-Type: application/json>
-example data: 
+input data: 
 {
 	"id": "654bcfa1505adc19a404aa63",
 	"title": "Tales from Indian Mythology Collection of 10 Books Story Books For Kids", 
@@ -110,7 +108,7 @@ result:
 endpoint: http://localhost:3000/api/delete
 type: POST
 Headers: <Content-Type: application/json>
-example data: 
+input data: 
 {
 	"id": "654bcfa1505adc19a404aa63"
 }
@@ -119,4 +117,11 @@ result:
 
 1. Book not exists with this id. if book is not exists with provided id
 2. Book Deleted if exists.
+
+
+# DEMO VIDEO
+
+https://www.loom.com/share/5cc4fd1eaebd4d8b875d238c20575efc?sid=e5d5b2d6-f025-4a7a-beb4-a2e7a6576845
+
+
 
