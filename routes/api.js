@@ -20,8 +20,6 @@ router.post('/save', async function (req, res) {
             res.send("Book already exists with this title");
         }else{
 
-            console.log((req.body));
-
             const newBookModel = new BookModel();
             newBookModel.title = req.body.title;
             newBookModel.author = req.body.author;
